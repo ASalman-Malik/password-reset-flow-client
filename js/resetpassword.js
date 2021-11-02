@@ -16,7 +16,7 @@ async function sendVerification(email) {
     let data = {
         email: email
     }
-    let datares = await fetch('https://password-reset-flow-server.herokuapp.com/resetpassword', {
+    let datares = await fetch('https://password-reset-flow-server-sam.herokuapp.com/resetpassword', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {

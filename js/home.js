@@ -1,7 +1,7 @@
 checklogin();
 
 async function checklogin() {
-    let response = await fetch('https://password-reset-flow-server.herokuapp.com/checklogin', {
+    let response = await fetch('https://password-reset-flow-server-sam.herokuapp.com/checklogin', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -27,7 +27,7 @@ async function checklogin() {
 
 
 async function logout() {
-    let response = await fetch('https://password-reset-flow-server.herokuapp.com/logout', {
+    let response = await fetch('https://password-reset-flow-server-sam.herokuapp.com/logout', {
         method: 'GET',
         credentials: 'include',
         headers: {

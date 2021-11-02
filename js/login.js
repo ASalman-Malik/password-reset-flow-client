@@ -19,7 +19,7 @@ async function CheckCredentials(email, password) {
         email: email,
         password: password
     }
-    const datares = await fetch('https://password-reset-flow-server.herokuapp.com/login', {
+    const datares = await fetch('https://password-reset-flow-server-sam.herokuapp.com/login', {
         method: 'POST',
         credentials: "include",
         body: JSON.stringify(data),
